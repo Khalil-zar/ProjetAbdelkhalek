@@ -14,6 +14,7 @@ export class AccueilComponent implements OnInit {
     {nom:'vetements', image:'assets/Images/habits.png'},
     {nom:'electroménager', image:'assets/Images/electromenager.jpg'}
     ];
+  
   constructor() { }
   ngOnInit(): void {
   }
