@@ -1,0 +1,8 @@
+<img style="width:150px;height:120px;" src="{{t.photo}}" >
+     {{t.libelle}} 
+     <span *ngIf="t.hautGamme==true" class="badge badge-primary">
+    {{t.prix}} Dt <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+     </span>
+     <span *ngIf="t.hautGamme!=true" class="badge badge-pill badge-dark">
+    {{t.prix}} Dt
+     </span>
