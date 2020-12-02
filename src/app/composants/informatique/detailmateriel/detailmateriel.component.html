@@ -1,0 +1,29 @@
+<h1> Détail du "PC" d'Id:2</h1>
+<div class='col-6'>
+<ul>
+    <ng-container *ngFor="let t of materiel" >
+    <img style="width:150px;height:120px;" src="{{t.photo}}" >
+    <li>Marque {{t.marque}}</li> 
+    <li>Prix {{t.prix}}</li>
+    <li>Description {{t.description}}</li>
+    <li> Quantité {{t.quantite}}</li>
+    <li>{{t.hautGamme}}</li>
+    <button type="button" class="btn btn-primary">Afficher les commentaires</button>
+    <h2> liste des commentaires </h2>
+    <div>
+<li>Commentaire n°1:{{t.commentaires[0].contenu}}
+<li> {{t.commentaires[0].auteur}}  {{t.commentaires[0].note}}</li>
+<li>{{t.commentaires[0].date}}</li>
+</div>
+<div>
+    <li>Commentaire n°2:{{t.commentaires[1].contenu}}
+    <li> {{t.commentaires[1].auteur}}  {{t.commentaires[1].note}}</li>
+    <li>{{t.commentaires[1].date}}</li>
+    </div>
+        
+        
+
+    
+    </ng-container>
+</ul>
+</div>
