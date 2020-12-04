@@ -7,6 +7,7 @@ import { Materiel } from 'src/app/models/materiel';
   styleUrls: ['./detailmateriel.component.css']
 })
 export class DetailmaterielComponent implements OnInit {
+  affichage:boolean=true;
   materiel:Materiel[] =[
   {
     id:'2',
@@ -24,6 +25,10 @@ export class DetailmaterielComponent implements OnInit {
    }]
 
   constructor() { }
+  onAffiche()
+  {
+    this.affichage = !this.affichage;
+  }
 
   ngOnInit(): void {
   }
