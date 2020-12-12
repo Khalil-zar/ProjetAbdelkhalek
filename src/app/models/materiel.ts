@@ -1,7 +1,7 @@
 import { Commentaire } from './commentaire';
 
 export class Materiel {
-    id :string;
+ id :string;
  libelle:string;
  photo: string;
  marque: string;
